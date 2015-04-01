@@ -100,6 +100,12 @@ module.exports = {
             level3: ""
         },
 
+        {
+            level1: "mapa",
+            level2: "",
+            level3: ""
+        },
+
         // ----------------------
         
         {

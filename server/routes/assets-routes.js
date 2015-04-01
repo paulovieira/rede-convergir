@@ -76,8 +76,18 @@ var routeTable = [
         config: {
             auth: false,
         }
-    }
+    },
 
+    {
+        method: 'GET',
+        path: '/mapa/{anyPath*}',
+        handler: {
+            directory: { path: './client/mapa' }
+        },
+        config: {
+            auth: false,
+        }
+    },
 ];
 
 module.exports = routeTable;

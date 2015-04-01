@@ -1,0 +1,14 @@
+.btn-block-custom {
+	display: block; 
+	width: 75%;	
+}
+
+.open > .dropdown-menu-custom {
+  display: block;
+  width: 75%;
+  padding-left: 10px;
+}
+
+#projects-list {
+	padding: 0 10px;
+}

@@ -308,6 +308,26 @@ debugger;
         return reply.redirect("/" + request.params.lang);
     },
 
+    mapa: function(request, reply) {
+        utils.logHandlerInfo("mapa", request);
+
+        debugger;
+
+
+        var context = {
+            texts:      request.pre.texts,
+            textsArray: request.pre.textsArray,
+            files:      request.pre.files,
+            filesArray: request.pre.filesArray,
+            auth:       request.auth,
+            urlParam1:  "mapa",
+        };
+
+        return reply.view('mapa', {
+            ctx: context
+        });
+
+    },
 };
 
 module.exports = handlers;

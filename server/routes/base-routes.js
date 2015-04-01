@@ -243,6 +243,27 @@ var routes = [
     },
 
 
+    {
+        method: "GET",
+        path: "/{lang}/mapaxx",
+        handler: baseHandlers.mapa,
+
+        config: {
+            
+            auth: config.get('hapi.auth'),
+
+            validate: {
+                params: validate.params.lang
+            },
+
+            pre: [
+                [pre.db.readAllTexts, pre.db.readAllFiles],
+                [pre.transform.texts, pre.transform.textsArray, pre.transform.files]
+            ]
+        },
+
+        
+    },
     // {
     //     method: "GET",
     //     path: "/{lang}/testpre",

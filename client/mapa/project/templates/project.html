@@ -1,0 +1,55 @@
+<div class="panel panel-default b-shadow project-container" style="margin-bottom: 25px;">
+    <div class="panel-heading">
+        <h3 class="panel-title">{{ projectName | upper }}</h3>
+    </div>
+    <div class="panel-body" style="padding-bottom: 10px;">
+
+        <div class="row">
+            <div class="col-sm-8">
+
+                <dl class="xdl-horizontal">
+                    <dt>Resumo:</dt>
+                    <dd>{{ summary }}</dd>
+
+                    <dt>Tipo de projecto ou iniciativa:</dt>
+                    <dd><a href="#">{{ type }}</a></dd>
+
+                    <dt>Website:</dt>
+                    <dd><a href="{{ url }}">{{ url }}</a></dd>
+                </dl>
+
+
+            </div>
+            <div class="col-sm-4">
+                <div class="text-center" style="margin-bottom: 15px;">
+                    <img src="{{ logoImg }}" class="img-thumbnail">
+                </div>
+
+
+            </div>
+        </div>
+
+        <div class="row" style="margin-top: 25px;">
+            <div class="col-sm-6 xcol-sm-offset-3">
+                <button type="button" class="btn btn-info btn-block">Mais informações</button>
+            </div>
+            <div class="col-sm-6 xcol-sm-offset-3">
+                <button type="button" class="btn btn-info btn-block">Eventos deste projecto</button>
+            </div>
+        </div>
+
+        <div class="text-right" style="margin-top: 25px;">
+    		<small>
+    			<strong>Adicionado por:</strong> {{ addedBy }}
+    		</small>                        	
+        </div>
+        <div class="text-right" style="margin-top: -5px;">
+    		<small>
+    			<strong>Última actualização:</strong> {{ lastUpdated }}
+    		</small>                        	
+        </div>
+
+                                       
+
+    </div>
+</div>

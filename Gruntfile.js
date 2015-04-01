@@ -21,6 +21,13 @@ module.exports = function(grunt) {
                 options: {}
             },
 
+            mapa: {
+                baseDir: 'client/mapa',
+                src: ['client/mapa/**/*.html'],
+                dest: 'client/mapa/templates.js',
+                options: {}
+            },
+
             ferramenta: {
                 baseDir: 'client/ferramenta',
                 src: ['client/ferramenta/**/*.html'],
@@ -108,6 +115,10 @@ module.exports = function(grunt) {
             "dashboard3 templates": {
                 files: 'client/dashboard3/**/*.html',
                 tasks: ['nunjucks:dashboard3']
+            },
+            "mapa templates": {
+                files: 'client/mapa/**/*.html',
+                tasks: ['nunjucks:mapa']
             },
             "ferramenta templates": {
                 files: 'client/ferramenta/**/*.html',
