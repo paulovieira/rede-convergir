@@ -1,5 +1,7 @@
 ALTERACOES (em relacao ao clima-madeira)
 
+-create new db and run the scripts
+
 -config
   -adicionar routes no config/default.js
   -copiar os ficheiro dev e dev-no-auth
