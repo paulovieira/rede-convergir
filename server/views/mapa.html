@@ -75,55 +75,91 @@
                         <span class="caret"></span>
                         <span class="sr-only">Toggle Dropdown</span>
                     </button>
-                    <ul class="dropdown-menu dropdown-menu-custom" role="menu">
+                    <ul class="dropdown-menu dropdown-menu-custom" id="filter-type" role="menu">
 
                         <li>
                             <div class="checkbox">
                                 <label>
-                                    <input type="checkbox"> Todos
+                                    <input type="checkbox" data-type="Todos" checked> Todos
                                 </label>
                             </div>
                         </li>
 
                         <li class="divider"></li>
 
-
                         <li>
                             <div class="checkbox">
                                 <label>
-                                    <input type="checkbox"> Transição
-                                </label>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="checkbox">
-                                <label>
-                                    <input type="checkbox"> Permacultura
-                                </label>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="checkbox">
-                                <label>
-                                    <input type="checkbox"> Gestão da Terra e da Natureza
-                                </label>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="checkbox">
-                                <label>
-                                    <input type="checkbox"> Espaço Construído
-                                </label>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="checkbox">
-                                <label>
-                                    <input type="checkbox"> Ferramentas e Tecnologias
+                                    <input type="checkbox" data-type="Permacultura"> Permacultura
                                 </label>
                             </div>
                         </li>
 
+                        <li>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" data-type="Transição"> Transição
+                                </label>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" data-type="Gestão da Terra e da Natureza"> Gestão da Terra e da Natureza
+                                </label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" data-type="Espaço Construído"> Espaço Construído
+                                </label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" data-type="Ferramentas e Tecnologias"> Ferramentas e Tecnologias
+                                </label>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" data-type="Cultura e Educação"> Cultura e Educação
+                                </label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" data-type="Saúde e Bem-Estar Espiritual"> Saúde e Bem-Estar Espiritual
+                                </label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" data-type="Economia e Finanças"> Economia e Finanças
+                                </label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" data-type="Uso da Terra e Comunidade"> Uso da Terra e Comunidade
+                                </label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" data-type="Outro"> Outro
+                                </label>
+                            </div>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -260,6 +296,8 @@
     <script src="/dashboard/profile/profile.js"></script>
     <script src="/dashboard/users/users.js"></script>
 #}
+    <script src="/mapa/rede-convergir-geojson.js"></script>
+    <script src="/mapa/loading/loading.js"></script>
     <script src="/mapa/index.js"></script>
 
 
