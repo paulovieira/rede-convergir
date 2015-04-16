@@ -1,34 +1,42 @@
-<div class="panel panel-default b-shadow project-container" style="margin-bottom: 25px;">
-    <div class="panel-heading">
-        <h3 class="panel-title">{{ properties.name | upper }}</h3>
+<div class="panel panel-default b-shadow project-container" style="margin-bottom: 14px; border-radius: 1px; border-color: #ededed;">
+    <div class="panel-heading" style="padding: 3px 15px; border-color: #ededed;">
+        <span style="font-size: 18px;">{{ properties.name | upper }}</span>
     </div>
-    <div class="panel-body" style="padding-bottom: 10px;">
+
+    <div class="panel-body" style="padding-bottom: 10px; padding-top: 8px;">
+
 
         <div class="row">
             <div class="col-sm-8">
 
-                <dl class="xdl-horizontal">
-                    <dt>Resumo:</dt>
-                    <dd>{{ properties.description }}</dd>
-
-                    <dt>Tipo de projecto ou iniciativa:</dt>
-                    <dd><a href="#">{{ properties.type }}</a></dd>
-
-                    <dt>Website:</dt>
-                    <dd><a href="{{ url }}">{{ properties.url }}</a></dd>
-                </dl>
+                <div>
+                    <span style="font-weight: bold;">Tipo de projecto: </span> {{ properties.type }}
+                </div>            
+{#
+                <div>
+                    <span style="font-weight: bold;">Domínios de interesse: </span> {{ properties.domains }}
+                </div>
+#}
+                <div class="row" style="margin-top: 12px;">
+                    <div class="col-sm-6">
+                        <button type="button" style="border-radius: 2px;" class="btn btn-info btn-block" data-toggle="collapse" data-target="#{{ id }}-more-info">Mais informações</button>
+                    </div>
+                    <div class="col-sm-6">
+                        <button type="button" style="border-radius: 2px;" class="btn btn-info btn-block">Eventos</button>
+                    </div>                
+                </div>
 
 
             </div>
             <div class="col-sm-4">
-                <div class="text-center" style="margin-bottom: 15px;">
-                    <img src="/common/images/logos/{{ properties.logoImage | lower  }}" class="img-thumbnail">
+                <div class="text-center" style="">
+                    <img src="/common/images/logos/{{ properties.logoImage | lower  }}" class="img-responsive img-thumbnail" style="max-height:80px">
                 </div>
 
 
             </div>
         </div>
-
+{#
         <div class="row" style="margin-top: 25px;">
             <div class="col-sm-6 xcol-sm-offset-3">
                 <button type="button" class="btn btn-info btn-block">Mais informações</button>
@@ -48,8 +56,23 @@
     			<strong>Última actualização:</strong> {{ properties.updatedAt }}
     		</small>                        	
         </div>
+#}
 
-                                       
+        <div class="row collapse" id="{{ id }}-more-info" style="margin-top: 10px;">
+            <div class="col-sm-12">
+
+                <div>
+                    <span style="font-weight: bold;">Domínios de interesse: </span>{{ properties.domains }}
+                </div>
+
+                <div style="margin-top: 6px;">
+                    <span style="font-weight: bold;">Descrição: </span>{{ properties.description }}
+                </div>
+
+            </div>
+        </div>                                       
+
+
 
     </div>
 </div>
