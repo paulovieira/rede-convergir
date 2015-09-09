@@ -171,10 +171,16 @@ var MapLV = Mn.LayoutView.extend({
 	template: "map/templates/map.html",
 
 	addTiles: function(){
-		L.tileLayer('https://{s}.tiles.mapbox.com/v3/{id}/{z}/{x}/{y}.png', {
+		// L.tileLayer('https://{s}.tiles.mapbox.com/v3/{id}/{z}/{x}/{y}.png', {
+		// 	maxZoom: 18,
+		// 	id: 'examples.map-i875mjb7'
+		// }).addTo(this.map);
+
+		L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6IjZjNmRjNzk3ZmE2MTcwOTEwMGY0MzU3YjUzOWFmNWZhIn0.Y8bhBaUMqFiPrDRW9hieoQ', {
 			maxZoom: 18,
-			id: 'examples.map-i875mjb7'
+			id: 'mapbox.streets'
 		}).addTo(this.map);
+
 	},
 
 	addPopups: function(){

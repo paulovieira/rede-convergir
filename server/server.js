@@ -20,7 +20,7 @@ server.connection({
 server.views(config.get("hapi.views"));
 
 Nunjucks.configure(global.rootPath + 'server/views', {
-    watch: true
+    watch: false
     //    autoescape: true 
 });
 
